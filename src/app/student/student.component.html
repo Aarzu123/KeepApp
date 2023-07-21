@@ -1,0 +1,122 @@
+<h1>Currency Data Display by using the Pipe !!!</h1>
+
+<div>
+    <!--output '$0.26'-->
+    <p>A: {{a | currency}}</p>
+
+    <!--output 'CA$0.26'-->
+    <p>A: {{a | currency:'CAD'}}</p>
+
+    <!--output 'CAD0.26'-->
+    <p>A: {{a | currency:'CAD':'code'}}</p>
+
+    <!--output 'CA$0,001.35'-->
+    <p>B: {{b | currency:'CAD':'symbol':'4.2-2'}}</p>
+
+    <!--output '$0,001.35'-->
+    <p>B: {{b | currency:'CAD':'symbol-narrow':'4.2-2'}}</p>
+
+    <!--output '0 001,35 CA$'-->
+    <p>B: {{b | currency:'CAD':'symbol':'4.2-2':'fr'}}</p>
+
+    <!--output 'CLP1' because CLP has no cents-->
+    <p>B: {{b | currency:'CLP'}}</p>
+  </div>
+
+
+
+
+
+
+
+<h1>Date Display !!!!</h1>
+
+<div>
+    <p>Today is {{today | date}}</p>
+    <p>Or if you prefer, {{today | date:'fullDate'}}</p>
+    <p>The time is {{today | date:'h:mm a z'}}</p>
+  
+</div>
+
+
+<h1>!!! Student Details By using switch case !!!</h1>
+
+<ul *ngFor="let stdObj of stdList" class="list-group" [ngSwitch]="stdObj.stdCountry">
+
+    <li class="list-item-group text-success" *ngSwitchCase="'USA'">
+        {{stdObj.stdName}}
+        {{stdObj.stdEmail}}
+        {{stdObj.stdCountry}}
+        {{stdObj.stdMarks}}
+    </li>
+
+    <li class="list-item-group text-primary" *ngSwitchCase="'Indi'">
+        {{stdObj.stdName}}
+        {{stdObj.stdEmail}}
+        {{stdObj.stdCountry}}
+        {{stdObj.stdMarks}}
+    </li>
+</ul>
+
+<hr>
+
+<h1>!!! Student Details By using Loop, conditions and styles USA!!!</h1>
+
+<ul *ngFor="let stdObj of stdList" class="list-group">
+    <li class="list-item-group" *ngIf="stdObj.stdCountry=='USA'">
+        {{stdObj.stdName | stdTitle:stdObj.gender}}
+        {{stdObj.stdEmail}}
+        {{stdObj.stdCountry}}
+        {{stdObj.stdMarks}}
+    </li>
+</ul>
+
+<hr>
+
+<h1>!!! Student Details By using Loop, conditions and styles!!!</h1>
+
+<ul *ngFor="let stdObj of stdList" class="list-group">
+    <li class="list-item-group">
+        {{stdObj.stdName}}
+        {{stdObj.stdEmail}}
+        {{stdObj.stdCountry}}
+        {{stdObj.stdMarks}}
+    </li>
+</ul>
+
+
+<hr>
+<h1>!!! Student Details By using Loop!!!</h1>
+
+<ul *ngFor="let stdObj of stdList">
+    <li>{{stdObj.stdName}}</li>
+    <li>{{stdObj.stdEmail}}</li>
+    <li>{{stdObj.stdCountry}}</li>
+    <li>{{stdObj.stdMarks}}</li>
+</ul>
+
+
+<hr>
+<h1>!!! Student Details !!!</h1>
+
+<ul>
+    <li>{{stdList[0].stdName | uppercase}}</li>
+    <li>{{stdList[0].stdEmail}}</li>
+    <li>{{stdList[0].stdCountry}}</li>
+    <li>{{stdList[0].stdMarks}}</li>
+
+    <li>{{stdList[1].stdName | lowercase}}</li>
+    <li>{{stdList[1].stdEmail}}</li>
+    <li>{{stdList[1].stdCountry}}</li>
+    <li>{{stdList[1].stdMarks}}</li>
+
+    <li>{{stdList[2].stdName}}</li>
+    <li>{{stdList[2].stdEmail}}</li>
+    <li>{{stdList[2].stdCountry}}</li>
+    <li>{{stdList[2].stdMarks}}</li>
+
+    <li>{{stdList[3].stdName}}</li>
+    <li>{{stdList[3].stdEmail}}</li>
+    <li>{{stdList[3].stdCountry}}</li>
+    <li>{{stdList[3].stdMarks}}</li>
+</ul>

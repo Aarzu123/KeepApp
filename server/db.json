@@ -1,0 +1,50 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "title": "Read Angular5 blog ",
+      "text": "Shall do at 6 pm "
+    },
+    {
+      "id": 2,
+      "title": "Call Ravi",
+      "text": "Track the new submissions",
+      "state": "started"
+    },
+    {
+      "id": 3,
+      "title": "Capitalism ",
+      "text": "Mark Twain "
+    },
+    {
+      "id": 4,
+      "title": "Java Development",
+      "text": "Java Training at 10:30"
+    },
+    {
+      "id": 5,
+      "title": "Dotnet Learning",
+      "text": "Dotnet Training at 11:00"
+    },
+    {
+      "title": "Java",
+      "text": "Java Training",
+      "id": 6
+    },
+    {
+      "title": "DotNet",
+      "text": "DotNet Training",
+      "id": 7
+    },
+    {
+      "title": "MEAN",
+      "text": "Mean Training",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "title": "Mean",
+      "text": "Mean Training on 21"
+    }
+  ]
+}

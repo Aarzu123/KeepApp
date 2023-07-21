@@ -1,0 +1,34 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "noteTitle": "Java",
+      "noteDesc": "Java Training"
+    },
+    {
+      "noteTitle": "React",
+      "noteDesc": "React Training",
+      "id": 2
+    },
+    {
+      "noteTitle": "Angular",
+      "noteDesc": "Angular Training",
+      "id": 3
+    },
+    {
+      "noteTitle": "Java FSD",
+      "noteDesc": "Java FSD Mock Test",
+      "id": 4
+    },
+    {
+      "noteTitle": "Java FSD",
+      "noteDesc": "Java FSD Mock Test",
+      "id": 5
+    },
+    {
+      "noteTitle": "Dotnet FSD",
+      "noteDesc": "Dotnet FSD Mock Test",
+      "id": 6
+    }
+  ]
+}

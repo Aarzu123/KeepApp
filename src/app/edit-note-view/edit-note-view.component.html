@@ -1,0 +1,19 @@
+<div class="note-container">  
+    <div class="note-form">    
+    <form class="note-form" [formGroup]="noteForm" (ngSubmit)=" editNote(noteForm)">
+            <mat-form-field class="example-full-width">
+              
+              <input matInput placeholder="Note Title" name="title" formControlName="title">
+            
+            </mat-form-field>
+          
+            <mat-form-field class="example-full-width">
+              
+              <textarea matInput placeholder="Note Description" name="text" formControlName="text"></textarea>
+            
+            </mat-form-field>
+            
+            <button class="btn btn-primary">Save Edited Data</button>
+        </form>
+    </div>    
+</div>
